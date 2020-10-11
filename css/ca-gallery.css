@@ -37,13 +37,13 @@ section h2.section-heading {
     color:#F07167 ;
 }
 section h3.section-subheading {
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 400;
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #00AFB9;
+    color: #FED9B7;
 }
 @media (min-width: 768px) {
     section {
@@ -74,7 +74,7 @@ body {
     right: 3%;
     height: 50px;
     width: 50px;
-    background: #e2cb36;
+    background:#F07167;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -82,6 +82,7 @@ body {
     cursor: pointer;
     margin-right: 0;
     transition: all 0.3s ease;
+    color:#FED9B7;
 }
 .offcanvas-btn-open {
     margin-right: 80vw;
@@ -89,7 +90,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: #FED9B7;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -124,7 +125,7 @@ body {
 }
 
 #mainNav {
-    background-color: #222222;
+    background-color: #0081A7;
     z-index: 5;
 }
 #mainNav .navbar-toggler {
@@ -134,12 +135,12 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #F07167;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color:#0081A7;
+    color:#FED9B7;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
@@ -214,6 +215,7 @@ header.masthead .intro-text .intro-lead-in {
     line-height: 22px;
     margin-bottom: 25px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:#FDFCDC ;
 }
 header.masthead .intro-text .intro-heading {
     font-size: 50px;
@@ -333,6 +335,7 @@ header.masthead .intro-text .intro-heading {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color:#FDFCDC ;
 }
 .portfolio-modal .modal-content h2 {
     font-size: 3em;
@@ -645,21 +648,21 @@ ul.social-buttons li a:hover {
 .btn-primary {
     font-weight: 700;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #FED9B7;
+    background-color: #F07167;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 .btn-primary.focus,
 .btn-primary:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color:  #FED9B7;
+    background-color: #F07167;
 }
 .btn-primary:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color:  #FED9B7;
+    background-color: #0081A7;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -778,7 +781,7 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 .fa-circle {
-    background-color:#F07167 ;
+    color: #F07167;
 }
 
 .center-border {
@@ -801,6 +804,16 @@ fieldset[disabled] .btn-xl:hover {
     width: 350px;
 } */
 
-.fa {
-    /* background-color: lightcoral; */
+ul.social-buttons li a {
+    background-color:#F07167;
+    color: #0081A7 ;
+}
+
+.fa-inverse {
+    color: #FDFCDC ;
+}
+
+form {
+    width: 300px;
+    height: 400px;
 }

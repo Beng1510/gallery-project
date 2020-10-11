@@ -64,8 +64,5 @@ var gProjects = [
         return project
     }
 
-    function getDate() {
-        
-    }
-
+   
     

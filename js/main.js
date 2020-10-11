@@ -3,55 +3,57 @@ console.log('Starting up');
 
 
 function onInit() {
-    // createProjects()
-    renderProjects()
+  renderProjects()
 }
 
 
 onInit()
 
 function renderProjects() {
- console.log('checking');  
-var strHtml = gProjects.map(function (project) {
+  console.log('checking');
+
+  var strHtml = gProjects.map(function (project) {
     return `
     <div class="col-md-4 col-sm-6 portfolio-item">
-    <a id ="${project.id}class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-      <div class="portfolio-hover">
+    <a class="portfolio-link" onclick="renderModal('${project.id}')">
+      <div class="portfolio-hover" >
         <div class="portfolio-hover-content">
           <i class="fa fa-plus fa-3x"></i>
         </div>
       </div>
-      <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+      <img class="img-fluid proj" src="img/portfolio/${project.id}.jpg" alt="">
     </a>
     <div class="portfolio-caption">
       <h4>${project.name}</h4>
-      <p class="text-muted">${project.title}</p>
+      <p class="project-title">${project.title}</p>
     </div>
   </div>
     `
-})
-document.querySelector('.projects-container').innerHTML = strHtml.join('');
+  })
+  document.querySelector('.row-projects-container').innerHTML = strHtml.join('');
 
 }
 
 
-function createProjects(id) {
-    var project = getProjById(id)
-    var strHTML = ` 
-    strHTML += <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>${project.name}</h4>
-            <p class="text-muted">${project.title}</p>
-          </div>
-        </div>
-        `
-        document.querySelector('.projects-container').innerHTML = strHTML;
-    }
+function renderModal(projId) {
+  console.log('check modal');
+  var project = getProjById(projId)
+  var elProj = document.querySelector('.modal-body')
+  elProj.innerHTML = `
+                <h2>${project.name}</h2>
+                <p class="item-intro text-muted">${project.title}</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.jpg" alt="">
+                <p>${project.desc}</p>
+                <ul class="list-inline">
+                  <li>Date: ${new Date(project.publishedAt).toLocaleDateString().split("/")}</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+                  `
+  $("#portfolioModal1").modal();
+}
+
+// document.querySelector('.portfolio-modal modal modash fade').innerHTML = strHtml.join('');

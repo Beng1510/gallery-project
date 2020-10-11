@@ -1,18 +1,20 @@
 body {
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color:#0081A7 ;
+   
 }
 p {
     line-height: 1.75;
 }
 a {
-    color: #fed136;
+    color: #FED9B7;
 }
 a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #fec503;
+    color: #F07167;
 }
 h1,
 h2,
@@ -23,6 +25,7 @@ h6 {
     font-weight: 700;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    color: #0081A7;
 }
 section {
     padding: 100px 0;
@@ -31,6 +34,7 @@ section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    color:#F07167 ;
 }
 section h3.section-subheading {
     font-size: 16px;
@@ -39,6 +43,7 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #00AFB9;
 }
 @media (min-width: 768px) {
     section {
@@ -134,14 +139,14 @@ body {
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color: #fed136;
+    color:#0081A7;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #fec503;
+    color:#00AFB9;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
@@ -154,7 +159,7 @@ body {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: #F07167;
 }
 @media (min-width: 992px) {
     
@@ -217,6 +222,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 25px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    color: #0081A7;
 }
 @media (min-width: 768px) {
     header.masthead .intro-text {
@@ -229,6 +235,7 @@ header.masthead .intro-text .intro-heading {
         line-height: 40px;
         margin-bottom: 25px;
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #FDFCDC
     }
     header.masthead .intro-text .intro-heading {
         font-size: 75px;
@@ -242,6 +249,7 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    color:#FED9B7
 }
 
 #portfolio .portfolio-item {
@@ -263,7 +271,8 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(254, 209, 54, 0.9);
+    background: rgba(253, 252, 220, 0.9);
+    
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
@@ -290,7 +299,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white;
+    background-color:#FDFCDC;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
@@ -698,29 +707,29 @@ fieldset[disabled] .btn-primary:hover {
     font-weight: 700;
     padding: 20px 40px;
     border-radius: 3px;
-    color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    color:#0081A7;
+    border-color: #F07167;
+    background-color: #F07167;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 .btn-xl.focus,
 .btn-xl:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: #F07167;
+    background-color: #0081A7;
 }
 .btn-xl:hover {
-    color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    color:#F07167;
+    border-color: #FED9B7;
+    background-color: #FED9B7;
 }
 .btn-xl.active,
 .btn-xl:active,
 .open > .btn-xl.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #F07167;
+    background-color:#0081A7;
 }
 .btn-xl.active.focus,
 .btn-xl.active:focus,
@@ -731,7 +740,7 @@ fieldset[disabled] .btn-primary:hover {
 .open > .btn-xl.dropdown-toggle.focus,
 .open > .btn-xl.dropdown-toggle:focus,
 .open > .btn-xl.dropdown-toggle:hover {
-    color: white;
+    color: #0081A7;
     border-color: #b48b01;
     background-color: #dcab01;
 }
@@ -766,4 +775,32 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+
+.fa-circle {
+    background-color:#F07167 ;
+}
+
+.center-border {
+    color:#F07167;
+}
+
+.project-banner {
+    background-color: #FED9B7;
+    background-image: url('/img/1000.jpg');
+    /* background-repeat: inherit; */
+    background-size: contain;
+}
+
+.project-title {
+    color:#F07167 ;
+} 
+
+/* .img-fluid {
+    height: 250px;
+    width: 350px;
+} */
+
+.fa {
+    /* background-color: lightcoral; */
 }
